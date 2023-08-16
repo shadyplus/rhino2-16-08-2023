@@ -1,0 +1,287 @@
+.form{
+    min-width: 330px;
+    box-sizing: border-box;
+    top: 10%;
+    width: 80%;
+    max-width: 780px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 5px #005893;
+    background: rgb(69,126,255);
+    background: linear-gradient(0deg, rgba(1,51,81, 1) 0%, rgba(89,182,216, 1) 99%);
+    color: #fff;
+    padding: 35px;
+}
+.form .alert h2{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+.form .alert{
+    margin-bottom: 25px;
+}
+.form .alert p.to_date{
+    font-size: 20px;
+}
+.form .alert p.to_date span{
+    display: block;
+    margin: 5px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.form .alert p.includes{
+    font-size: 20px;
+}
+.form .form__info .product_image_holder{
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.form .form__info .product_image_holder img{
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.form .form__inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form .form__inputs .input{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.form .form__inputs .input .input-label{
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+    transform: translateY(30px);
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+    pointer-events: none;
+}
+.form .form__inputs .input .input-field{
+    height: 35px;
+    color: #3dff00;
+    padding: 5px 15px;
+    border: none;
+    background: none;
+    border-bottom: 1px #fff solid;
+    font-size: 25px;
+}
+.form .form__inputs .input .input-field:hover + .input-label{
+    transform: translateY(25px);
+}
+.form .form__inputs .input .input-field:focus + .input-label{
+    transform: translateY(0);
+}
+.form .form__inputs .input .input-field:valid + label{
+    color: #3dff00;
+    transform: translateY(0px) !important;
+}
+.form .form__inputs .action{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 35px;
+}
+.form .form__inputs .action button{
+    width: 65%;
+    height: 50px;
+    color: #ff5151;
+    font-weight: bold;
+    background: #fff;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    transition: 0.5s;
+}
+.form .form__inputs .action button:hover{
+    color: #3dff00;
+    border: 3px solid #3dff00;
+    box-shadow: 0 0 10px #3dff00;
+}
+.form .form__inputs .action .card-info{
+    margin-top: 10px;
+}
+
+
+
+
+#toform{
+    top: 4%;
+}
+#toform .card-form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#toform .alert .timer .to_date{
+    margin-bottom: 15px;
+}
+#toform .alert .timer .to_date span{
+    margin-top: 15px;
+}
+.alert-text-and-image{
+    display: flex;
+    flex-direction: column;
+}
+.alert-text-and-image .product_image_holder{
+    display: flex;
+    min-width: 230px;
+    width: 58%;
+}
+.timer-and-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#toform .timer-and-form .timer-to-and-day{
+    margin-bottom: 100px;
+    text-align: center;
+}
+#toform .timer-label{
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+#toform .timer-and-form .timer-labels{
+    font-size: 40px;
+}
+#toform .timer-and-form .all-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#toform .timer-and-form .all-inputs .input{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+}
+#toform .timer-and-form .all-inputs .input label{
+    transform: translateY(35px);
+    padding-left: 20px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+#toform .timer-and-form .all-inputs .input input:hover + label{
+    color: #ffd500;
+}
+#toform .timer-and-form .all-inputs .input input:valid + label,
+#toform .timer-and-form .all-inputs .input input:focus + label{
+    transform: translateY(-10px);
+
+}
+#toform .timer-and-form .all-inputs .input input{
+    background: none;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 10px 20px;
+    color: #ffd500;
+}
+#toform .timer-and-form .all-inputs .input:last-child{
+    margin-bottom: 0;
+}
+#toform .timer-and-form .all-inputs .action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#toform .timer-and-form .all-inputs .action button{
+    padding: 10px 20px;
+    background: #f55353;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+#toform .timer-and-form .all-inputs .action button:hover{
+    color: #ffd500;
+}
+#toform .timer-and-form .all-inputs .action .card-info{
+    margin-top: 15px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+    .form .alert h2{font-size: 30px;}
+}
+@media screen and (max-width: 875px){
+    #toform{
+        width: 90%;
+    }
+    .alert-text-and-image{
+        align-items: center;
+    }
+}
+@media screen and (max-width: 700px){
+    #toform .timer-and-form .all-inputs{
+        width: 80%;
+    }
+    .form .alert h2{
+        font-size: 25px;
+    }
+    #toform .timer-label{
+        font-size: 21px;
+    }
+    #toform .timer-and-form .timer-labels{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 635px){
+    #toform{
+        top: 3%;
+        width: 70%;
+    }
+    #toform .card-form{
+        flex-direction: column;
+    }
+    .form .alert{
+        text-align: center;
+    }
+    .form .alert h2{
+        font-size: 20px;
+    }
+    #toform .timer-label{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    #toform .timer-and-form .timer-labels{
+        font-size: 20px;
+    }
+    .alert-text-and-image .product_image_holder{
+        min-width: 175px;
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    #toform .timer-and-form .timer-to-and-day{
+        margin-bottom: 10px;
+    }
+    .form{
+        padding: 30px 0;
+        height: unset !important;
+    }
+    #toform .timer-and-form .all-inputs{
+        width: 90%;
+    }
+    .form .alert h2{
+        margin-bottom: 10px;
+    }
+}
+
+
